@@ -1,7 +1,7 @@
 apiVersion: vs.axis-dev.io/v1
 kind: AssemblyLine
 metadata:
-  name: staging-deploy
+  name: nagao-staging-deploy
 spec:
   params:
     - name: gitRevision
@@ -11,10 +11,10 @@ spec:
   stages:
     - name: deploy
       spec:
-        pipeline: rolling-upgrade-simple-api
+        pipeline: nagao-rolling-upgrade-simple-api
         deployment:
-          app: simple-api
-          name: staging
+          app: nagao-simple-api
+          name: nagao-deployment
         params:
           - name: gitRevision
             value: $(inputs.gitRevision)

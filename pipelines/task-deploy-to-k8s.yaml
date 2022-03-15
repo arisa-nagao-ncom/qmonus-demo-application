@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: deploy-to-k8s
+  name: nagao-deploy-to-k8s
 spec:
   params:
     - name: appName

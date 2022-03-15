@@ -1,7 +1,7 @@
 package local
 
 _const: {
-	#name: "simple-api"
+	#name: "nagao-simple-api"
 	#port: 5000
 }
 
